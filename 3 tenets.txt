@@ -1,0 +1,4 @@
+(just like OOP)
+component nesting: place component inside each other
+component resuability: 
+component configuration: customize each button for different functionality

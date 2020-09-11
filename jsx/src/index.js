@@ -3,16 +3,14 @@ import React from 'react';
 import ReactDOM from 'react-dom'
 
 
-function getButtonText(){
-    return 'Click on me!';
-}
+
 
 // Create a react component
 const App = function(){
     const buttonText = {text: 'click me'};
     return (
         <div>
-        <label className = "label" for= "name">
+        <label className = "label" htmlFor= "name">
         Enter name:                 
          </label>
          <input id = "name" type ="text"/>
