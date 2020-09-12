@@ -1,0 +1,12 @@
+ex 2
+
+
+<segment>
+    <div></div>
+</segment>
+
+make sure to refer to children inside the component
+
+const Segment = () => {
+    return <div className="ui placeholder segment">{props.children}</div>
+}
