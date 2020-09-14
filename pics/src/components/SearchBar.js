@@ -3,12 +3,12 @@ import React from 'react'
 class SearchBar extends React.Component{
     state = { term: ''};
 
-    onFormSubmit(event){
+    onFormSubmit = (event) =>{
         event.preventDefault();//prevent refreshing page
         console.log(this.state.term)
     }
-
-
+    //arrow function : making sure that every this.arrowfunction gets executed correctly
+    //onSubmit == press Enter
     render(){
         return (
         <div className = "ui segment">
