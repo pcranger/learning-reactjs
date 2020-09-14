@@ -5,14 +5,15 @@ class SearchBar extends React.Component{
 
     onFormSubmit = (event) =>{
         event.preventDefault();//prevent refreshing page
-        console.log(this.state.term)
+        this.props.onSubmit(this.state.term) //SearchBar receive the props(the onSearchSubmit callback)
     }
     //arrow function : making sure that every this.arrowfunction gets executed correctly
     //onSubmit == press Enter
     render(){
         return (
         <div className = "ui segment">
-            <form onSubmit={this.onFormSubmit}className = "ui form">
+            /*user hit submit and onFormSubmit is invoked, but it contains a callback function from App which calls api so the result will take time*/
+            <form onSubmit={this.onFormSubmit} className = "ui form">
                 <div className = "field">
                     <label>Image Search</label>
                 <input type = "text" value={this.state.term} onChange = {(e) => this.setState({term: e.target.value})}/>
