@@ -1,0 +1,13 @@
+The difference is React developers don't want to reach into HTML DOM world to reach for input value of user
+When user press a key, react process that information first, then display the key to search bar
+
+render(){
+<input>
+value = {this.state.term} #state is currently storing 'car'
+onChange = {e => this.sestState(...} #user press 's' key
+#input gets rerendered
+
+#rerendering
+<input>
+value = {this.state.term} #state is now 'cars'
+
